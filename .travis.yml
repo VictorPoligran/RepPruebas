@@ -16,7 +16,7 @@ cache:
    - $HOME/.composer/cache/files
    - vendor
 
-script: phpunit
+script: Index
 
 notifications:
  email: virodriguez37@poligran.edu.co
