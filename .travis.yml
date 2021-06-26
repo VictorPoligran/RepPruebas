@@ -16,8 +16,9 @@ cache:
    - $HOME/.composer/cache/files
    - vendor
 
-script:
- - vendor/bin/phpunit --coverage-clover coverage.xml
+script: phpunit
 
 notifications:
  email: virodriguez37@poligran.edu.co
+
+
