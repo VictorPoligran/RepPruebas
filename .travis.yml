@@ -14,7 +14,7 @@ cache:
    - $HOME/.composer/cache/files
    - vendor
 
-script:
+#script:
 # - vendor/bin/phpunit test --coverage-test
 
 notifications:
