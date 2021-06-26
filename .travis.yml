@@ -1,11 +1,14 @@
-languaje: php
+language: php
 
 php:
- - 7.3
+    - 7.2
+    - 7.3
+    - 7.4
 
 before_script:
- - composer self-update
-# - composer install --prefer-source --no-interaction --dev
+    - travis_retry composer self-update
+    - travis_retry composer install --no-interaction --prefer-source --dev
+
 notifications:
    on_success: never
    on_failure: always
@@ -14,8 +17,11 @@ cache:
    - $HOME/.composer/cache/files
    - vendor
 
-#script:
-# - vendor/bin/phpunit test --coverage-test
+script:
+    - vendor/bin/phpunit --coverage-clover coverage.xml
+after_success:
+    - bash <(curl -s https://codecov.io/bash)
 
 notifications:
  email: virodriguez37@poligran.edu.co
+
