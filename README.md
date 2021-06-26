@@ -1,4 +1,2 @@
 # RepPruebas
-Pruebas de Repositorio 
-
-Nueva Version
+!(Build Status)(https://travis-ci.com/VictorPoligran/RepPruebas.svg?branch=main)
