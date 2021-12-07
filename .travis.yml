@@ -16,7 +16,8 @@ cache:
    - $HOME/.composer/cache/files
    - vendor
 
-script: Index
+script:
+ - vendor/bin/phpunit test --coverage-test
 
 notifications:
  email: virodriguez37@poligran.edu.co
